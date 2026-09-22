@@ -11,7 +11,12 @@ public class Romain {
 	}
 
 	public String prendreParole() {
-		return "Le romain " + nom + ": ";
+		return "Le romain " + nom + ": "; // concaténation par +
+	}
+
+	public void parler(String texte) {
+		System.out.println(prendreParole() + texte);
+		// syso + ctrl_espace
 	}
 
 }
