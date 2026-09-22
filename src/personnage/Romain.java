@@ -5,6 +5,12 @@ public class Romain {
 	private String nom;
 	private int force;
 
+	// constructeur
+	public Romain(String nom, int force) {
+		this.nom = nom; // collision évitée avec l'attribut
+		this.force = force;
+	}
+
 	// méthodes
 	public String getNom() {
 		return nom;
