@@ -10,13 +10,22 @@ public class Romain {
 		return nom;
 	}
 
-	public String prendreParole() {
+	private String prendreParole() {
 		return "Le romain " + nom + ": "; // concaténation par +
 	}
 
 	public void parler(String texte) {
 		System.out.println(prendreParole() + texte);
 		// syso + ctrl_espace
+	}
+
+	public void recevoirCoup(int forceCoup) {
+		force -= forceCoup;
+		if (force > 0) {
+			parler("Aïe");
+		} else {
+			parler("J'abandonne.");
+		}
 	}
 
 }
