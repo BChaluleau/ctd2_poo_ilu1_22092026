@@ -27,6 +27,11 @@ public class Gaulois {
 		// syso + ctrl_espace
 	}
 
+	public void frapper(Romain romain) {
+		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		romain.recevoirCoup(force * effetPotionMagique);
+	}
+
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Asterix", 666);
 		asterix.parler("Bonjour");
